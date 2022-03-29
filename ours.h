@@ -1,12 +1,13 @@
-#ifndef pierre_h
-#define pierre_h
+#ifndef ours_h
+#define ours_h
 #include <iostream>
 #include "animaux.h"
 using namespace std;
 
-class Pierre : public animal {
-  public:
+class Ours : public animal {
+public :
     // méthodes
-    void setAttaque();
+    void setAttaque(animal &a);
     void deplace(int maxX, int maxY);
 };
+

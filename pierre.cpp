@@ -9,6 +9,8 @@ void Pierre::deplace(int maxX, int maxY){
 }
 
 
-void Pierre::setAttaque(animal &a){
-  a.setAttaque(0);
+
+void Pierre::setAttaque(){
+  this->typeAttaque=this->typeAttaque.Attaque(0); //Attaque avec pierre
 }
+

@@ -14,7 +14,7 @@ bool Attaque::resoudreAttaque(Attaque &a) const{ //attaque entre 2 animaux
   
   if(this->type==a.type) // Si égalité  
     {
-    aleat=rand() % 2; // valeur 0 ou 1
+    aleat=rand()%2; // valeur 0 ou 1
     if (aleat==0) 
       resol=false; //perdu
     else 

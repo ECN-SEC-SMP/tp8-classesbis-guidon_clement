@@ -4,14 +4,14 @@
 using namespace std;
 
 class animal {
-private:
+
+protected:
     string nom;
     int x; //abcisse
     int y; //ordonnée
     bool vivant;
     Attaque typeAttaque;
 
-protected:
     
 public:
     // accesseurs en lecture

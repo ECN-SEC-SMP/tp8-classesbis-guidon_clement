@@ -1,12 +1,13 @@
-#ifndef pierre_h
-#define pierre_h
+#ifndef lion_h
+#define lion_h
 #include <iostream>
 #include "animaux.h"
 using namespace std;
 
-class Pierre : public animal {
-  public:
+class Lion : public animal {
+public :
     // méthodes
-    void setAttaque();
+    void setAttaque(animal &a);
     void deplace(int maxX, int maxY);
 };
+
