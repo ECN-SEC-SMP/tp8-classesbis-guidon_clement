@@ -8,11 +8,14 @@ animal::animal(int maxX, int maxY) {
     this->y=rand() % maxY; //ordonnée
 }
 
-animal::animal(int maxX, int maxY, int x, int y){
-  if(maxX >= x) {this->x = x;} 
+animal::animal(int maxX, int maxY, int a, int b){
+  if(maxX >= x) {this->x = a;} 
   else {this->x = rand() % maxX;}
 
-  if(maxY >= y) {this->y = y;} 
+  if(maxY >= y) {this->y = b;} 
   else {this->y = rand() % maxY;}
 }
 
+bool animal::attaque(animal &a){
+  return this->typeAttaque.resoudreAttaque(a.typeAttaque);
+}

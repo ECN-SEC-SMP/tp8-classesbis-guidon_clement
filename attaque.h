@@ -11,11 +11,6 @@ private:
     
 public:
 
-    // méthodes
-    void setAttaque();
-    void deplace(int maxX, int maxY);
-
-    // constructeurs
     Attaque() {this->type=random()%3} //crée une attaque random
     Attaque(int a) {this->type=a;} //crée une attaque spécifique
 
@@ -24,4 +19,5 @@ public:
     string getNomAttaque() const;
     bool resoudreAttaque(Attaque &a) const;
 };
+
 
